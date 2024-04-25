@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "Vazir-Bold";
+        src:local("vaziry"), url('./public/fonts/vaziry/Vazir-Bold.woff') format('woff2');
+        font-display: swap;
+    }
+     @font-face {
+        font-family: "noto-bold";
+        src:local("noto"), url('./public/fonts/noto/NotoSansArabic_Condensed-Bold.ttf');
+        font-display: swap;
+    }
+
+     @font-face {
+        font-family: "noto-light";
+        src:local("noto"), url('./public/fonts/noto/NotoSansArabic_Condensed-Light.ttf');
+        font-display: swap;
+    }
+     @font-face {
+        font-family: "noto-medium";
+        src:local("noto"), url('./public/fonts/noto/NotoSansArabic_Condensed-Medium.ttf');
+        font-display: swap;
+    }
+     @font-face {
+        font-family: "noto-regular";
+        src:local("noto"), url('./public/fonts/noto/NotoSansArabic_Condensed-Reqular.ttf');
+        font-display: swap;
+    }
+    body{
+      background-image:url("../images/headerBgDesktop.png");
+        background-repeat: no-repeat;
+    }
+}
