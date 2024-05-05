@@ -34,3 +34,26 @@
         background-repeat: no-repeat;
     }
 }
+
+@layer components{
+
+     .submenu__item--active{  
+        @apply relative  text-orange-300 pr-2.5;    
+              
+    }
+
+    .submenu__item--active::after{
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+        background-color:#FDBA74;
+    }
+   
+}
