@@ -1111,6 +1111,10 @@ body{
   line-height: 1rem;
 }
 
+.tracking-normal {
+  letter-spacing: 0em;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
@@ -1189,6 +1193,10 @@ body{
   opacity: 1;
 }
 
+.child\:block > * {
+  display: block;
+}
+
 .child\:pr-2 > * {
   padding-right: 0.5rem;
 }
@@ -1204,6 +1212,17 @@ body{
 .child\:text-gray-300 > * {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.child\:transition-colors > * {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.child-hover\:text-orange-300 > *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .dark\:inline-block:is(.dark *) {

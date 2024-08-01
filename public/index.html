@@ -106,14 +106,14 @@
                     <div class="shrink-0">
                         <img src="./images/app-logo.png" alt="Logo Coffee Shop">
                     </div>
-                    <ul class="flex  h-full gap-x-2 md:gap-x-4 lg:gap-x-5 xl:gap-x-9 text-xl text-gray-300 tracking-tighter child:text-gray-300  child:leading-[56px]  ">
+                    <ul class="flex h-full gap-x-2 md:gap-x-4 lg:gap-x-5 xl:gap-x-9 text-xl text-gray-300 tracking-tighter child:text-gray-300  child:leading-[56px]  ">
 
                         <li class="text-orange-200">
                             <a href="#">صفحه اصلی</a>
                         </li>
                         <li class="relative group">
                             <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
-                               <div class="absolute w-52 p-6 top-full opacity-0 invisible group-hover:opacity-100  group-hover:visible delay-75 bg-white">
+                               <div class="absolute top-full w-52 rounded-2xl p-6 space-y-4 opacity-0 invisible group-hover:opacity-100  group-hover:visible delay-75 text-zinc-700 dark:text-white dark:bg-zinc-700  bg-white border-t-[3px] border-t-orange-300 text-base child:block tracking-normal shadow-normal child:transition-colors child-hover:text-orange-300 transition-all"> 
                                 <a href="#">قهوه ویژه</a>
                                 <a href="#">قهوه در سطح جهانی</a>
                                 <a href="#">قهوه درجه یک</a>
@@ -146,9 +146,8 @@
                                     <use href="#shopping-cart"></use>
                                 </svg>
                             </div>
-                            <div class="absolute p-5 top-full left-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  w-[400px]  text-zinc-700 delay-75
-                                                                                                                                                                                                                                                                                     dark:text-white text-base space-y-4 bg-white dark:bg-zinc-700 rounded-2xl
-                                                                                                                                                                                                                                                                                      border-t-[3px] border-t-orange-300  transition-all shadow-normal ">
+                            <div class="absolute p-5 top-full left-0  opacity-0 invisible group-hover:opacity-100 group-hover:visible  w-[400px]  text-zinc-700 delay-75  dark:text-white text-base space-y-4 bg-white dark:bg-zinc-700 rounded-2xl
+border-t-[3px] border-t-orange-300  transition-all shadow-normal ">
 
 
                                 <div class="flex justify-between items-center font-noto-regular text-xs tracking-tighter">
@@ -308,7 +307,7 @@
                     </div>
 
                 <ul class="child:pr-2.5  dark:text-white text-zinc-600 space-y-6">     
-                     <li>
+                     <li class="relative">
                         <div class="flex justify-between items-center">
                             <a href="#" class="flex items-center gap-x-2">
                             <svg class="w-5 h-5 dark:text-zinc-300">
@@ -317,14 +316,14 @@
                            فروشگاه
 
                         </a>
-                        <span class="submenu-open-btn cursor-pointer transition-all">
-                            <svg class="w-5 h-5 dark:text-zinc-300">
-                              <use href="#chevrone-down"></use>
+                            <span class="submenu-open-btn cursor-pointer transition-all">
+                               <svg class="w-5 h-5 dark:text-zinc-300">
+                                 <use href="#chevrone-down"></use>
                              </svg>
                             </span>
                         </div>
 
-                        <div class="submenu">
+                        <div class="submenu absolute p-6 rounded-2xl">
                             <a href="#">قهوه ویژه</a>
                             <a href="#" class="submenu__item--active">ویژه در سطح جهانی</a>
                             <a href="#">قهوه درجه یک</a>
