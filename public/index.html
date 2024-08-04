@@ -87,8 +87,7 @@
 
         <header class="fixed top-9 right-0 left-0 hidden md:flex  items-center w-[95%] lg:w-[90%] h-24  px-5 lg:px-10 pl-4 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
             <div class="flex items-center w-full justify-between">
-                <nav class="flex  items-center gap-x-5 lg:gap-x-9 h-14">
-
+                <nav class="flex items-center gap-x-5 lg:gap-x-9 h-14">
                     <div class="shrink-0">
                         <img src="./images/app-logo.png" alt="Logo Coffee Shop">
                     </div>
@@ -108,7 +107,6 @@
                                 <a href="#">قهوه زینو برزیلی</a>
                               </div>
                         </li>
-
                         <li>
                             <a href="#">دیکشنری</a>
                         </li>
@@ -229,23 +227,22 @@
             </div>
 
             <!-- Mobile Nav -->
-            <div class="nav fixed  min-h-screen md:hidden bottom-0 right-0 w-64 top-0 px-4 bg-white dark:bg-zinc-700 overflow-y-auto z-20">
+            <div class="nav fixed min-h-screen md:hidden bottom-0 -right-64 w-64 top-0 px-4 bg-white dark:bg-zinc-700 overflow-y-auto z-20">
                   <!-- Nav Header -->
-            <div class="flex justify-between items-center pt-3 pb-6 border-b border-b-gray-100 dark:border-b-white/10 pr-2.5 mb-4 ">
-              
+            <div class="flex justify-between items-center pt-3 pb-6 border-b border-b-gray-100 dark:border-b-white/10 pr-2.5 mb-4 ">            
                     <div class="flex md:hidden gap-x-3.5">
-                        <svg class="w-[41px] h-10 text-orange-300 ">
-                    <use href="#logo"></use>
-                </svg>
-                <svg class="flex md:hidden w-[100px] h-10 text-orange-300">
-                    <use href="#logo-type"></use>
-                </svg>        
-              </div>
+                            <svg class="w-[41px] h-10 text-orange-300 ">
+                            <use href="#logo"></use>
+                        </svg>
+                        <svg class="flex md:hidden w-[100px] h-10 text-orange-300">
+                            <use href="#logo-type"></use>
+                        </svg>        
+                     </div>
 
-               <svg class="closebtn w-5 h-5  dark:text-white text-zinc-700">
+               <svg class="closebtn w-5 h-5  dark:text-white text-zinc-700  cursor-pointer">
                  <use href="#x-mark"></use>
-                </svg>
-                </div>
+              </svg>
+           </div>
 
                 <!-- Nav Menu -->
                  <div class="flex justify-between items-center bg-orange-200/20 text-orange-300 pr-0 h-10  rounded-md mb-4">
@@ -282,11 +279,6 @@
                             <a href="#">قهوه زینو برزیلی</a>
                         </div>
                     </li>
-
-                    
-
-                
-
                     <li class="flex justify-between items-center">
                         <a href="#" class="flex items-center gap-x-2">
                             <svg class="w-5 h-5 dark:text-zinc-300">
@@ -295,6 +287,7 @@
                              دیکشنری
                         </a>
                     </li>
+
 
                     <li  class="flex justify-between items-center">
                         <a href="#" class="flex items-center gap-x-2">
@@ -349,11 +342,7 @@
                             </svg>
                             <span>تم روشن</span>
                         </a> 
-
                          </div>
-
-                       
-
                          <a class="inline-flex  gap-x-2  cursor-pointer">
                          <svg class="w-5 h-5 text-orange-300 ">
                                  <use href="#shopping-cart"></use>
@@ -364,10 +353,7 @@
                         </a>
                 </div>
 
-            </div>
-
-
-            <!-- Logo Mobile -->
+                <!-- Logo Mobile -->
             <div>             
                 <svg class="flex md:hidden w-[100px] h-10 text-orange-300">
                     <use href="#logo-type"></use>
@@ -377,13 +363,20 @@
 
             <!-- shop mobile -->
             <div>
-               
+               <svg class="flex md:hidden w-[100px] h-8 text-zinc-500">
+                 <use href="#shopping-cart"></use>
+                 </svg> 
              
             </div>
+
+            </div>
+
+
+            
         </div>
 
 
-        <div class="md:hidden fixed inset-0  w-full h-full bg-black/40 z-10"></div>
+        <div class="ovelay overlay--visible"></div>
 
         <script src="./scripts/app.js"></script>
     </body>

@@ -46,8 +46,7 @@
      }
   
      .submenu__item--active{  
-        @apply relative  text-orange-300 pr-2.5;    
-              
+        @apply relative  text-orange-300 pr-2.5;              
     }
 
     .submenu__item--active::after{
@@ -63,7 +62,7 @@
         margin:auto;
         background-color:#FDBA74;
     }
-   
+  
     .overlay{
         @apply invisible opacity-0 fixed md:hidden inset-0 bg-black/40 z-10 transition-all;
     }

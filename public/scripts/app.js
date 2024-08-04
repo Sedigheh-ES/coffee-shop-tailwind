@@ -2,10 +2,13 @@ const toggleThemeBtns = document.querySelectorAll( ".toggle-theme" );
 const SubmenuOpenBtn = document.querySelector( ".submenu-open-btn" );
 const submenu = document.querySelector( ".submenu" );
 
-const navIcon = document.querySelector( ".nav-icon" );
+const navOpenBtn = document.querySelector( ".nav-icon" );
+const navCloseBtn = document.querySelector( ".closebtn" );
+
 const nav = document.querySelector( ".nav" );
 const overlay = document.querySelector( ".overlay" );
-const closeBtn = document.querySelector( ".closebtn" );
+
+
 
 toggleThemeBtns.forEach( btn => {    
     btn.addEventListener( "click", () => {
@@ -27,21 +30,24 @@ SubmenuOpenBtn.addEventListener( "click", ( e ) => {
 
     
 
-navIcon.addEventListener( "click", () => {
+navOpenBtn.addEventListener( "click", () => {
     nav.classList.remove( "-right-64" );
     nav.classList.add( "right-0" );
-    overlay.classList.add( "overlay--visible" );
+    overlay .classList.add( "overlay--visible" );
 } );
 
-closeBtn.addEventListener( "click", () => {  
+ navCloseBtn.addEventListener( "click", () => {  
     nav.classList.remove( "right-0" );
     nav.classList.add( "-right-64" );
     overlay.classList.remove( "overlay--visible" );
 } );
 
-// overlay.addEventListener( "click", () => {
+
+
+overlay.addEventListener( "click", () => {
+    console.log("overLay Clicked");
     
-// })
+})
 
 
 
