@@ -678,6 +678,10 @@ body{
   position: relative;
 }
 
+.-right-64 {
+  right: -16rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -702,8 +706,12 @@ body{
   top: 100%;
 }
 
-.-right-64 {
-  right: -16rem;
+.-left-64 {
+  left: -16rem;
+}
+
+.-left-0 {
+  left: -0px;
 }
 
 .z-20 {
@@ -721,6 +729,10 @@ body{
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -1081,6 +1093,14 @@ body{
   padding-top: 1.5rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1119,6 +1139,10 @@ body{
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .tracking-normal {
