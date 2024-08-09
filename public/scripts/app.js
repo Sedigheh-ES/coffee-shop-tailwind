@@ -7,7 +7,9 @@ const navCloseBtn = document.querySelector( ".closebtn" );
 
 const nav = document.querySelector( ".nav" );
 const overlay = document.querySelector( ".overlay" );
-
+const cartIcon = document.querySelector( ".cart-icon");
+const cardCloseBtn = document.querySelector( ".card-close-btn" );
+const navCard = document.querySelector( ".navCard" );
 
 
 toggleThemeBtns.forEach( btn => {    
@@ -40,7 +42,24 @@ navOpenBtn.addEventListener( "click", () => {
     nav.classList.remove( "right-0" );
     nav.classList.add( "-right-64" );
     overlay.classList.remove( "overlay--visible" );
+ } );
+
+ 
+
+cartIcon.addEventListener( "click", () => {
+    // console.log("card btn clicked");
+    navCard.classList.remove( "-left-64" );
+    navCard.classList.add( "left-0" );
+    overlay .classList.add( "overlay--visible" );
 } );
+
+cardCloseBtn.addEventListener( "click", () => {  
+    navCard.classList.remove( "left-0" );
+    navCard.classList.add( "-left-64" );
+    overlay.classList.remove( "overlay--visible" );
+} );
+
+
 
 
 
