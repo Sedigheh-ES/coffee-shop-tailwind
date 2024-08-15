@@ -29,10 +29,10 @@
         src:local("noto"), url('./public/fonts/noto/NotoSansArabic_Condensed-Reqular.ttf');
         font-display: swap;
     }
-    body{
+    /* body{
       background-image:url("../images/headerBgDesktop.png");
         background-repeat: no-repeat;
-    }
+    } */
 }
 
 @layer components{
@@ -75,4 +75,9 @@
         @apply w-5 h-5 dark:text-white text-zinc-700 transition-all;
     }
     
+    .circle{ @apply flex items-center justify-center rounded-full border ;}
+    .circle--main{@apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex;}
+    .circle--lg{ @apply  h-[203px] w-[203px] border-white/25;}
+    .circle--md{@apply h-[145px] w-[145px] border-white/50;}
+    .circle--sm{@apply h-[95px] w-[95px] border-white/80;}
 }

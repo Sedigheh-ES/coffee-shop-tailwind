@@ -12,6 +12,7 @@ module.exports = {
           600: "#967259",
           900: "#634832"
         },
+
       
       },
       boxShow: {
@@ -29,13 +30,32 @@ module.exports = {
         "noto-medium": "noto-medium",
         "noto-regular": "noto-regular"
       },
-
       letterSpacing: {
         'tightest': '-0.065em',
       },
       spacing: {
         '30':'7.5rem',
-      }
+      },
+      container: {
+          center: true,
+          padding: {
+          DEFAULT: "1rem",
+          lg:"0.625rem"
+        }
+       
+        
+      },
+       backgroundImage: {
+          "home-mobile":"url(../images/headerBgMobile.webp)",
+          "home-desktop":"url(../images/headerBgDesktop.webp)"
+        },
+
+    },
+     screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
   },
     plugins: [
