@@ -37,7 +37,6 @@
 
 @layer components{
    
-
     .submenu{
         @apply hidden flex-col gap-y-3  pr-7  mt-3  text-zinc-600  dark:text-white;
         }
@@ -80,4 +79,53 @@
     .circle--lg{ @apply  h-[203px] w-[203px] border-white/25;}
     .circle--md{@apply h-[145px] w-[145px] border-white/50;}
     .circle--sm{@apply h-[95px] w-[95px] border-white/80;}
+
+    @media screen and (min-width:1024px) {
+         html.dark .products{
+           background-image:url("../images/products.png");
+    }
+
+    .products{
+        background:linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)), url("../images/products.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
+
+
+
+
+    .section-title{
+        @apply text-2xl	md:text-5xl text-zinc-700 dark:text-white;
+    }
+    .section-subtitle{
+        @apply  inline-block text-lg md:text-3xl mt-0.5 md:mt-1.5 text-zinc-700 dark:text-white;
+    }
+    .section-link{
+        @apply flex items-center gap-x-1 h-10 text-base md:text-xl tracking-tightest pr-3 pl-1 rounded-md text-orange-300 md:hover:bg-orange-300/20 transition-colors;
+    }
+
+     .offer{
+       @apply relative text-gray-400;
+    }
+    .offer::after{
+        content:"";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background-color:#EF4444;
+        top: 3px;
+
+    }
+        
+    }
+
+    @layer utilities{
+        .flex-center{
+            @apply flex items-center justify-center;
+        }
+    }
+   
+   
