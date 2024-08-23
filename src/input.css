@@ -129,9 +129,49 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-        
+
+   
+
+    .service{
+        @apply relative;
     }
 
+    
+
+    .service::after,
+    .service::before{
+        content:"";
+        display:block;
+        position:absolute;
+        margin: auto;
+        inset: 0;
+        background-color: #D1D5DB;
+
+
+    }
+     @media screen and (min-width: 640px) {
+        .service::after,
+        .service::before{
+        content: none
+       }       
+    }
+    html.dark.service::after,
+    html.dark.service::before{
+        background-color: rgba(255,255,255,0.1)
+        
+    }
+    .service::after{
+        width: 1px;
+        height: calc(100% + 1.25rem);
+
+    }
+    .service::before{
+        width:calc(100% - 2rem);
+        height: 1px;
+
+    }
+
+}
     @layer utilities{
         .flex-center{
             @apply flex items-center justify-center;
